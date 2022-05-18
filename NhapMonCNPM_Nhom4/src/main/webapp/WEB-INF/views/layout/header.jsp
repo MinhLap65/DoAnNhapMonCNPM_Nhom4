@@ -5,10 +5,10 @@
 
 <c:set var="cart" value="${sessionScope['scopedTarget.cartService']}" />
 
-
 <header>
 	<img src="https://hoanghamobile.com/Uploads/Originals/2020/12/03/202012031548027973_xonggggg.gif" alt="" width="100%">
 </header>
+
 
 <nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #F8F8FF; border-bottom: 1px solid gainsboro;">
 	<div class="container ">
