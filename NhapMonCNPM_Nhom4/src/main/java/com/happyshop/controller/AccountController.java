@@ -145,11 +145,11 @@ public class AccountController {
 		model.addAttribute("message", "Đăng ký thành công. Vui lòng kiểm tra mail để kích hoạt tài khoản!");
 
 
-		String from = "happyshopsuport2020@gmail.com";
+		String from = "minhlap65@gmail.com.com";
 		String to = user.getEmail();
 		String subject = "Welcome!";
 		String url = request.getRequestURL().toString().replace("register", "activate/" + user.getId());
-		String body = "Happy shop xin chào! Vui lòng nhấn vào <a href='" + url + "'>Activate</a> để kích hoạt tài khoản.";
+		String body = "PTIT FOOD xin chào! Vui lòng nhấn vào <a href='" + url + "'>Activate</a> để kích hoạt tài khoản.";
 		MailInfo mail = new MailInfo(from, to, subject, body);
 		mailer.send(mail);
 
@@ -181,10 +181,10 @@ public class AccountController {
 		} else if (!email.equals(user.getEmail())) {
 			model.addAttribute("message", "Email không đúng!");
 		} else {
-			String from = "happyshopsuport2020@gmail.com";
+			String from = "minhlap65@gmail.com";
 			String to = user.getEmail();
 			String subject = "Quên mật khẩu!";
-			String body = "Happy Shop xin chào! Mật khẩu của bạn là: " + user.getPassword();
+			String body = "PTIT FOOD xin chào! Mật khẩu của bạn là: " + user.getPassword();
 			MailInfo mail = new MailInfo(from, to, subject, body);
 			mailer.send(mail);
 			model.addAttribute("message", "Mật khẩu đã được gửi đến mail của bạn!");

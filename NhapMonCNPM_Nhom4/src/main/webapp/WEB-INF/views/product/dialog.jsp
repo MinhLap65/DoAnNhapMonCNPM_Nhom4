@@ -18,7 +18,7 @@
 				</div>
 				<div class="form-group">
 					<label>Người nhận:</label>
-					<input disabled="disabled" value="happyshopsuport2020@gmail.com" id="sender" class="form-control">
+					<input disabled="disabled" value="minhlap65@gmail.com" id="sender" class="form-control">
 				</div>
 				<div class="form-group">
 					<label>Nội dung:</label> 
